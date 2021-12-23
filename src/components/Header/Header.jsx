@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { Badge } from "antd";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { ShoppingOutlined } from "@ant-design/icons";
 
 import { useAuth } from "../../contexts/authContext";
 import { cartContext } from "../../contexts/cartContext";
@@ -42,7 +42,7 @@ const Header = () => {
         <div style={{display:"flex",margin:"1%"}}>
         <Link style={{paddingRight:"15%"}} to="/cart">
             <Badge count={+cartLength}>
-              <ShoppingCartOutlined
+              <ShoppingOutlined
                 style={{ fontSize: "30px", cursor: "pointer" }}
               />
             </Badge>

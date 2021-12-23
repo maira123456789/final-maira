@@ -14,6 +14,7 @@ const Login = () => {
     setHasAccount,
     emailError,
     passwordError,
+    authWithGoogle
   } = useAuth();
   return (
     // <>
@@ -77,7 +78,10 @@ const Login = () => {
               </>
             )}
           </div>
+          <button style={{backgroundColor:"#674ea7",height: "55px",borderRadius:"50%",alignItems:"center"}} onClick={authWithGoogle}><p style={{textAlign: 'center', color: 'white'}}>Войти с помощью
+          <img className="google-logo" onClick={authWithGoogle} src="https://cdn-icons-png.flaticon.com/512/2875/2875404.png" alt="google" /></p></button>
         </div>
+        
       </section>
     // </>
   );

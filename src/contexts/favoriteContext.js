@@ -84,7 +84,7 @@ const FavoriteContextProvider = ({ children }) => {
     if (count <= 0) {
       count = 1;
     }
-    let favorite = JSON.parse(localStorage.getItem("cart"));
+    let favorite = JSON.parse(localStorage.getItem("favorite"));
     favorite.products = favorite.products.map((item) => {
       if (item.item.id === id) {
         item.count = count;

@@ -1,10 +1,10 @@
-import { Button, InputNumber } from 'antd';
-import { List } from 'rc-field-form';
 import React, { useContext } from 'react';
+import { Button, InputNumber, List } from 'antd';
+// import { List } from 'rc-field-form';
 import { favoriteContext } from '../../contexts/favoriteContext';
 
 const FavoritesItem = ({item}) => {
-    const { deleteFromFavorite, changeProductCount } = useContext(favoriteContext);
+    const { deleteFromFavorite } = useContext(favoriteContext);
     return (
         <List.Item
         key={item.id}
@@ -39,32 +39,6 @@ const FavoritesItem = ({item}) => {
                   marginTop: "20px",
                 }}
               >
-                <div>
-                  <h4>Quantity</h4>
-                  <Button
-                    onClick={() =>
-                      changeProductCount(item.count - 1, item.item.id)
-                    }
-                  >
-                    -
-                  </Button>
-                  <InputNumber
-                    style={{ width: "35px" }}
-                    value={item.count}
-                    disabled
-                  />
-                  <Button
-                    onClick={() =>
-                      changeProductCount(item.count + 1, item.item.id)
-                    }
-                  >
-                    +
-                  </Button>
-                </div>
-                <div>
-                  <h4>SubPrice</h4>
-                  <h3>{"$" + item.subPrice}</h3>
-                </div>
               </div>
               <Button onClick={() => deleteFromFavorite(item.item.id)}>
                 Remove from favorites
