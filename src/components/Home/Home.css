@@ -1,0 +1,30 @@
+.home-main{
+    background: url("https://wallpapercave.com/wp/wp6751729.jpg");
+}
+.img {
+    display: flex;
+    margin: 20px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link {
+    margin-top: 5%;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.cards {
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 3%;
+}
+
+@media all and(max-widht:1024px){
+    .main-home-img{
+        height: auto;
+    }
+}

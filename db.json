@@ -1,0 +1,145 @@
+{
+  "products": [
+    {
+      "brand": "Chevrolet",
+      "model": "Impala 1963",
+      "description": "Модель 1963 года внешне мало отличалась от предыдущей, основными отличиями были более простой узор линий боковины и почти плоское лобовое стекло вместо полупанорамного. Кузов имел подчёркнуто-гранёные обводы, входившие в моду в те годы. С точки зрения дизайна модель 1963 года нередко считается наиболее привлекательным из всех ранних автомобилей Impala.",
+      "price": 57000,
+      "image1": "https://i.pinimg.com/originals/cf/d8/6b/cfd86b1e5fd475674d515572b121cbd6.jpg",
+      "image2": "https://i.pinimg.com/originals/fa/dc/c2/fadcc24ac2eac4e5444cb3fc12e4fb65.jpg",
+      "id": 1
+    },
+    {
+      "brand": "Mercedes",
+      "model": "190 SL",
+      "description": "В 1954 году компания Mercedes-Benz на международной автовыставке в Нью-Йорке представила новый автомобиль Mercedes-Benz 190 SL[4]. Данная модель представляла привлекательную, более доступную альтернативу Mercedes-Benz 300 SL, разделяя её основные идеи и технологические особенности. Сконструирован новый автомобиль был на базе R121 платформы (модификация седана W121)[4]. Мощность автомобиля составляла 77 кВт (105 л.с. при 5700 об/мин и 142 Нм при 3200 об/мин)",
+      "price": 166666,
+      "image1": "https://lh3.googleusercontent.com/proxy/OhafU6ztMgL8EBP--hZdw52G-Ueww7b_pC2m3qDFAxJan4B70RlIQSG4j0nxiHsdcxkCd1X3l_bJwT47EHlMyuWa1MCQFyRojKfaEb2V6vekk7yOyO_qPmBz0w",
+      "image2": "http://carsot.com/images/mercedesbenz-190-sl-r121-1955-1963-roadster-exterior-1.jpg ",
+      "id": 3
+    },
+    {
+      "brand": "Ford",
+      "model": "Ranchero",
+      "description": "30000",
+      "price": 30000,
+      "image1": "https://avatars.mds.yandex.net/get-verba/787013/2a00000167f9cfee1e3191cd8a2286bd86dd/cattouch",
+      "image2": "https://avatars.mds.yandex.net/get-verba/787013/2a00000167f9cfee1e3191cd8a2286bd86dd/cattouch",
+      "id": 4
+    },
+    {
+      "brand": "Caddilac",
+      "model": "Series 62",
+      "description": "34000",
+      "price": 34000,
+      "image1": "https://images2.bonhams.com/image?src=Images/live/2011-08/24/8356606-1-1.jpg&width=640&height=480&autosizefit=1",
+      "image2": "https://images2.bonhams.com/image?src=Images/live/2011-08/24/8356606-1-1.jpg&width=640&height=480&autosizefit=1",
+      "id": 5
+    },
+    {
+      "brand": "Dodge",
+      "model": "Dart",
+      "description": "Первые Dart начали выпускаться с 1960 модельного года. Они представляли собой небольшой полноразмерный автомобиль, пришедший в качестве непосредственной замены ранее продававшихся через дилерские представительства марки Dodge моделей Plymouth, — что практиковалось ещё с 1930-х годов, но в начале 1960-х было прекращено из-за структурных изменений внутри Chrysler.",
+      "price": 48000,
+      "image1": "https://photos.classiccars.com/cc-temp/listing/133/2925/19772123-1960-dodge-dart-phoenix-thumb.jpg",
+      "image2": "https://ic.pics.livejournal.com/expert2009/20668917/153633/153633_1000.jpg",
+      "id": 6
+    },
+    {
+      "brand": "Pontiac",
+      "model": "Ventura",
+      "description": "Ventura была впервые представлена ​​в 1960 году как новая более дорогая модель на стандартной полноразмерной 122-дюймовой B-body колесной базе Pontiac, разделяемой с Ponti. Каталина . Он был доступен как Vista (четырехдверный хардтоп ) и Sports Coupe (двухдверный хардтоп). У него была уникальная внешняя идентификация, роскошные колпаки на колеса, спортивное рулевое колесо и характерные трехцветные сиденья, выполненные из «Morrokide».",
+      "price": 63000,
+      "image1": "https://i.pinimg.com/originals/db/9d/f7/db9df7be8914710870de50d9029fc37d.jpg",
+      "image2": "https://www.auctomobile.com/vimg/1000-1000/pontiac-ventura-46.jpg",
+      "id": 7
+    },
+    {
+      "brand": "Plymouth",
+      "model": "Fury",
+      "description": "1960",
+      "price": 61050,
+      "image1": "https://www.ebaymotorsblog.com/motors/blog/wp-content/uploads/2020/09/1960-grand-fury-black-betty-2.jpg",
+      "image2": "https://bringatrailer.com/wp-content/uploads/2020/06/1960_plymouth_fury_1593615348c4f875f0d6c1eddc2IV5A0518-scaled.jpg?fit=940%2C627",
+      "id": 8
+    },
+    {
+      "brand": "Lincoln",
+      "model": "Continental",
+      "description": "1960",
+      "price": 17900,
+      "image1": "https://www.beverlyhillscarclub.com/galleria_images/9855/9855_p48_l.jpg",
+      "image2": "https://images.classic.com/vehicles/a98fd8aa8e70663c937dc2e75aa0e7039f1d5a0c.jpg?auto=format",
+      "id": 9
+    },
+    {
+      "brand": "Chevrolet",
+      "model": "Impala",
+      "description": "1963",
+      "price": 43000,
+      "image1": "https://i.pinimg.com/originals/8e/2f/0b/8e2f0bc1255fe09ebd93f83881ba2832.jpg",
+      "image2": "https://i.pinimg.com/originals/8e/2f/0b/8e2f0bc1255fe09ebd93f83881ba2832.jpg",
+      "id": 10
+    },
+    {
+      "brand": "Lincoln",
+      "model": "Continental",
+      "description": "1960",
+      "price": 17900,
+      "image1": "https://www.beverlyhillscarclub.com/galleria_images/9855/9855_p48_l.jpg",
+      "image2": "https://images.classic.com/vehicles/a98fd8aa8e70663c937dc2e75aa0e7039f1d5a0c.jpg?auto=format",
+      "id": 9
+    },
+    {
+      "brand": "Chevrolet",
+      "model": "Impala",
+      "description": "1963",
+      "price": 43000,
+      "image1": "https://i.pinimg.com/originals/8e/2f/0b/8e2f0bc1255fe09ebd93f83881ba2832.jpg",
+      "image2": "https://i.pinimg.com/originals/8e/2f/0b/8e2f0bc1255fe09ebd93f83881ba2832.jpg",
+      "id": 10
+    }
+  ],
+  "brands": [
+    {
+      "brand": "Mercedes",
+      "logo": "https://автолого.рф/wp-content/uploads/mercedes-benz-logo-2011-1920x1080.png",
+      "id": 1
+    },
+    {
+      "brand": "Chevrolet",
+      "logo": "https://i0.wp.com/www.dafontfree.co/wp-content/uploads/2021/08/Chevrolet-Logo-Font-1.jpg?fit=1000%2C665&ssl=1",
+      "id": 2
+    },
+    {
+      "brand": "Ford",
+      "logo": "https://автолого.рф/wp-content/uploads/ford-logo-2003-1366x768.png",
+      "id": 3
+    },
+    {
+      "brand": "Caddilac",
+      "logo": "https://www.carlogos.org/logo/Cadillac-logo-2014-1920x1080.png",
+      "id": 4
+    },
+    {
+      "brand": "Dodge",
+      "logo": "https://автолого.рф/wp-content/uploads/dodge-logo-1990-2100x2100-1024x1024.png",
+      "id": 5
+    },
+    {
+      "brand": "Pontiac",
+      "logo": "https://автолого.рф/wp-content/uploads/pontiac-logo-1957-1920x1080.png",
+      "id": 6
+    },
+    {
+      "brand": "Plymouth",
+      "logo": "https://автолого.рф/wp-content/uploads/plymouth-logo-1920x1080.png",
+      "id": 7
+    },
+    {
+      "brand": "Lincoln",
+      "logo": "https://автолого.рф/wp-content/uploads/lincoln-logo-2019-1920x1080-1.png",
+      "id": 8
+    }
+  ]
+}
