@@ -1,7 +1,7 @@
-export const PRODUCTS_API = "http://localhost:8000/products";
+export const PRODUCTS_API = "https://retro-cars.herokuapp.com/apiproducts";
 
-export const BRANDS_API = "http://localhost:8000/brands";
+export const BRANDS_API = "https://retro-cars.herokuapp.com/apibrands";
 
-export const COMMENTS_API = "http://localhost:8000/comments";
+export const COMMENTS_API = "https://retro-cars.herokuapp.com/apicomments";
 
-export const LIKES_API = "http://localhost:8000/likes";
+export const LIKES_API = "https://retro-cars.herokuapp.com/apilikes";
