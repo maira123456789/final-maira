@@ -19,7 +19,7 @@ const Likes = () => {
   let avgRate = 0;
 
   if (likes) {
-    console.log(likes);
+    // console.log(likes);
     likes.forEach((item) => {
       if (item.productId === params.id && item.owner === user.email) {
         idFeedTemp = item.id;
