@@ -1,5 +1,5 @@
 {
-  "apiproducts": [
+  "products": [
     {
       "brand": "Chevrolet",
       "model": "Impala 1963",
@@ -100,7 +100,7 @@
       "id": 10
     }
   ],
-  "apibrands": [
+  "brands": [
     {
       "brand": "Mercedes",
       "logo": "https://автолого.рф/wp-content/uploads/mercedes-benz-logo-2011-1920x1080.png",
@@ -147,7 +147,7 @@
       "id": 9
     }
   ],
-  "apicomments": [
+  "comments": [
     {
       "text": "ddd",
       "owner": "maira@gmail.com",
@@ -157,7 +157,7 @@
       "id": 3
     }
   ],
-  "apilikes": [
+  "likes": [
     {
       "productId": "3",
       "rate": 1,
