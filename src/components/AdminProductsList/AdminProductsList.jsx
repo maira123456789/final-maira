@@ -6,10 +6,15 @@ import { productsContext } from "../../contexts/productsContext";
 
 const AdminProductsList = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { getProducts, deleteProduct, products, productsTotalCount } = useContext(productsContext);
+  const { getProducts, deleteProduct, products, productsTotalCount } =
+    useContext(productsContext);
 
-  const [currentPage, setCurrentPage] = useState(searchParams.get('_page') ? searchParams.get('_page') : 1);
-  const [limit, setLimit] = useState(searchParams.get('_limit') ? searchParams.get('_limit') : 10);
+  const [currentPage, setCurrentPage] = useState(
+    searchParams.get("_page") ? searchParams.get("_page") : 1
+  );
+  const [limit, setLimit] = useState(
+    searchParams.get("_limit") ? searchParams.get("_limit") : 10
+  );
   useEffect(() => {
     setSearchParams({
       q: "",

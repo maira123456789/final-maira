@@ -26,7 +26,8 @@ const ProductsList = () => {
   const { getProducts, products, productsTotalCount } =
     useContext(productsContext);
   useEffect(() => {
-    setSearchParams({ //все попадает в windows.locationSearch  и подгружается из админки
+    setSearchParams({
+      //все попадает в windows.locationSearch  и подгружается из админки
       q: search,
       _page: page,
       _limit: limit,
@@ -47,7 +48,7 @@ const ProductsList = () => {
       price_gte: price[0],
       price_lte: price[1],
     });
-  }, [search, page, limit, brand, price]); // отловили все действия 
+  }, [search, page, limit, brand, price]); // отловили все действия
   // console.log(products);
   return (
     <div className="container" style={{ marginTop: "20px" }}>
@@ -56,7 +57,7 @@ const ProductsList = () => {
           style={{ cursor: "pointer" }}
           onClick={() => setShowFilters(!showFilters)}
         >
-          {showFilters ? "HIDE FILTERS" : "SHOW FILTERS"}
+          {/* {showFilters ? "HIDE FILTERS" : "SHOW FILTERS"} */}
         </div>
         <Input.Search
           value={search}
@@ -65,14 +66,14 @@ const ProductsList = () => {
           placeholder="Search..."
         />
       </div>
-      {showFilters ? (
-        <Filters
-          brand={brand}
-          setBrand={setBrand}
-          price={price}
-          setPrice={setPrice}
-        />
-      ) : null}
+      {/* {showFilters ? ( */}
+      <Filters
+        brand={brand}
+        setBrand={setBrand}
+        price={price}
+        setPrice={setPrice}
+      />
+      {/* ) : null} */}
       <div className="products-list">
         {products.length > 0 ? (
           products.map((item) => <ProductCard item={item} />)

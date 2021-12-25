@@ -7,7 +7,7 @@ import AdminProductsList from "../components/AdminProductsList/AdminProductsList
 
 const AdminPage = () => {
   return (
-    <div className="container" style={{marginTop:"15px",flexWrap:"wrap"}}>
+    <div className="container" style={{ marginTop: "15px", flexWrap: "wrap" }}>
       <Row>
         <Col span={24}>
           <Col span={24}>
@@ -15,14 +15,14 @@ const AdminPage = () => {
             <AdminBrandsList />
           </Col>
         </Col>
-        </Row>
-        <br />
-        <Row>
+      </Row>
+      <br />
+      <Row>
         <Col span={24}>
           <Col span={24}>
             <div>
-            <AddProductModal />
-            <AdminProductsList />
+              <AddProductModal />
+              <AdminProductsList />
             </div>
           </Col>
         </Col>

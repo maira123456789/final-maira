@@ -1,5 +1,9 @@
 .home-main{
-    background: url("https://wallpapercave.com/wp/wp6751729.jpg");
+    background: url("https://wallpaper.dog/large/17133733.jpg");
+    background-size: cover;
+    margin-top: -1.3%;
+    margin-bottom: -3%;
+    background-attachment: fixed;
 }
 .img {
     display: flex;

@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Modal, Button, Form, Input } from "antd";
 import { brandsContext } from "../../contexts/brandsContext";
 const AddBrandModal = () => {
-  const {createBrand} = useContext(brandsContext)
+  const { createBrand } = useContext(brandsContext);
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -15,11 +15,14 @@ const AddBrandModal = () => {
 
   const onFinish = (values) => {
     // console.log('Success:', values);
-    createBrand(values).then(()=> handleCancel());
+    createBrand(values).then(() => handleCancel());
   };
   return (
     <>
-      <Button style={{backgroundColor:"rgb(229, 207, 250)"}} onClick={showModal}>
+      <Button
+        style={{ backgroundColor: "rgb(229, 207, 250)" }}
+        onClick={showModal}
+      >
         Add brand
       </Button>
       <Modal
@@ -32,7 +35,7 @@ const AddBrandModal = () => {
           name="basic"
           onFinish={onFinish}
           autoComplete="off"
-          layout='vertical'
+          layout="vertical"
         >
           <Form.Item
             label="Brand"
@@ -57,7 +60,7 @@ const AddBrandModal = () => {
               },
             ]}
           >
-            <Input/>
+            <Input />
           </Form.Item>
 
           <Form.Item

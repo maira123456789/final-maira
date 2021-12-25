@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer, useState } from "react";
-import { APIcomments } from "../helpers/const";
+import { APIcomments } from "../helpers/consts";
 import axios from "axios";
 
 export const commentsContext = React.createContext();
@@ -20,8 +20,6 @@ const reducer = (state = INIT_STATE, action) => {
 
 const CommentContextProvider = (props) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-
-  // ! CREATE
 
   const addComments = async (
     text,
@@ -45,8 +43,6 @@ const CommentContextProvider = (props) => {
     }
   };
 
-  // ! READ
-
   const getCommentsForRoom = async (productId) => {
     try {
       const response = await axios(APIcomments + "?productId=" + productId);
@@ -59,8 +55,6 @@ const CommentContextProvider = (props) => {
       console.log(e);
     }
   };
-
-  // ! UPDATE
 
   const getCommentToEdit = async (id) => {
     try {
@@ -85,8 +79,6 @@ const CommentContextProvider = (props) => {
       console.log(e);
     }
   };
-
-  //!DELETE
 
   const deleteComment = async (comment) => {
     try {

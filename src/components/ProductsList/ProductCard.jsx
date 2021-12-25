@@ -15,13 +15,16 @@ const ProductCard = ({ item }) => {
   const { addProductToCart, checkItemInCart } = useContext(cartContext);
   const [checkInCart, setCheckInCart] = useState(checkItemInCart(item.id));
   useEffect(() => {
-      setCheckInCart(checkItemInCart(item.id))
+    setCheckInCart(checkItemInCart(item.id));
   });
-  const {addProductToFavorite, checkItemInFavorite } = useContext(favoriteContext);
-  const [checkInFavorite, setCheckInFavorite] = useState(checkItemInFavorite(item.id));
+  const { addProductToFavorite, checkItemInFavorite } =
+    useContext(favoriteContext);
+  const [checkInFavorite, setCheckInFavorite] = useState(
+    checkItemInFavorite(item.id)
+  );
   useEffect(() => {
-    setCheckInFavorite(checkItemInFavorite(item.id))
-  })
+    setCheckInFavorite(checkItemInFavorite(item.id));
+  });
   return (
     <Card
       hoverable
@@ -29,12 +32,12 @@ const ProductCard = ({ item }) => {
       style={{ width: "280px", margin: "10px" }}
       cover={<img alt="example" src={item.image1} />}
       actions={[
-        <StarOutlined 
-        style={{ color: checkInFavorite ? "red" : "black", fontSize: "25px" }}
-        onClick={() => {
-          addProductToFavorite(item);
-          setCheckInFavorite(checkItemInFavorite(item.id));
-        }}
+        <StarOutlined
+          style={{ color: checkInFavorite ? "red" : "black", fontSize: "25px" }}
+          onClick={() => {
+            addProductToFavorite(item);
+            setCheckInFavorite(checkItemInFavorite(item.id));
+          }}
         />,
         <ShoppingOutlined
           style={{ color: checkInCart ? "red" : "black", fontSize: "25px" }}

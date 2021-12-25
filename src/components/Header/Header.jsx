@@ -34,13 +34,13 @@ const Header = () => {
       title: "FAVORITES",
       link: "/favorites",
       id: 3,
-    }
+    },
   ];
   return (
     <>
       <nav>
-        <div style={{display:"flex",margin:"1%"}}>
-        <Link style={{paddingRight:"15%"}} to="/cart">
+        <div style={{ display: "flex", margin: "1%" }}>
+          <Link style={{ paddingRight: "15%" }} to="/cart">
             <Badge count={+cartLength}>
               <ShoppingOutlined
                 style={{ fontSize: "30px", cursor: "pointer" }}
@@ -59,9 +59,7 @@ const Header = () => {
             <Link to="/auth">
               <button className="sign-btn">Login</button>
             </Link>
-            
           )}
-          
         </div>
       </nav>
       <div className="header">
@@ -69,13 +67,11 @@ const Header = () => {
         <Link to="/">
           <img
             width="100px"
-            src="https://svgheart.com/wp-content/uploads/2020/05/classic-car-free-svg-file.png"
+            src="https://bumper-stickers.ru/48961-large_default/low-rider-lourayder.jpg"
             alt=""
           />
         </Link>
-        <div>
-          
-        </div>
+        <div></div>
       </div>
       <div className="navbar">
         {NAV_ITEMS.map((item) => (

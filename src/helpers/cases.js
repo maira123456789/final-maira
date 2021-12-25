@@ -5,4 +5,4 @@ export const CASE_GET_BRANDS = "GET_BRANDS";
 
 export const CASE_GET_CART = "GET_CART";
 
-export const CASE_GET_FAVORITE  = "GET_FAVORITE";
+export const CASE_GET_FAVORITE = "GET_FAVORITE";

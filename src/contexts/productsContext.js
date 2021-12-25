@@ -8,13 +8,17 @@ export const productsContext = React.createContext();
 const INIT_STATE = {
   products: [],
   oneProduct: null,
-  productsTotalCount: 0
+  productsTotalCount: 0,
 };
 
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case CASE_GET_PRODUCTS:
-      return { ...state, products: action.payload.data, productsTotalCount: action.payload.headers["x-total-count"] };
+      return {
+        ...state,
+        products: action.payload.data,
+        productsTotalCount: action.payload.headers["x-total-count"],
+      };
     case CASE_GET_ONE_PRODUCT:
       return { ...state, oneProduct: action.payload.data };
     default:
@@ -25,9 +29,9 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductsContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-  async function createProduct (newProduct) {
+  async function createProduct(newProduct) {
     await axios.post(PRODUCTS_API, newProduct);
-    getProducts()
+    getProducts();
   }
 
   async function getProducts() {
@@ -47,13 +51,13 @@ const ProductsContextProvider = ({ children }) => {
   }
 
   async function deleteProduct(id) {
-      await axios.delete(`${PRODUCTS_API}/${id}`);
-      getProducts()
+    await axios.delete(`${PRODUCTS_API}/${id}`);
+    getProducts();
   }
 
-  async function updateProduct(id, editedProduct){
-      await axios.patch(`${PRODUCTS_API}/${id}`,editedProduct);
-      getProducts()
+  async function updateProduct(id, editedProduct) {
+    await axios.patch(`${PRODUCTS_API}/${id}`, editedProduct);
+    getProducts();
   }
 
   return (
@@ -66,7 +70,7 @@ const ProductsContextProvider = ({ children }) => {
         getOneProduct,
         deleteProduct,
         updateProduct,
-        createProduct
+        createProduct,
       }}
     >
       {children}

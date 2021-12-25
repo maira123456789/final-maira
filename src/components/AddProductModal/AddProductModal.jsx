@@ -27,7 +27,10 @@ const AddProductModal = () => {
   };
   return (
     <>
-      <Button style={{backgroundColor:"rgb(229, 207, 250)"}} onClick={showModal}>
+      <Button
+        style={{ backgroundColor: "rgb(229, 207, 250)" }}
+        onClick={showModal}
+      >
         Add product
       </Button>
       <Modal
@@ -97,7 +100,7 @@ const AddProductModal = () => {
               },
             ]}
           >
-            <InputNumber min={1} style={{width:"100%"}} />
+            <InputNumber min={1} style={{ width: "100%" }} />
           </Form.Item>
 
           <Form.Item

@@ -140,9 +140,215 @@
       "brand": "Lincoln",
       "logo": "https://автолого.рф/wp-content/uploads/lincoln-logo-2019-1920x1080-1.png",
       "id": 8
+    },
+    {
+      "brand": "asd",
+      "logo": "asd",
+      "id": 9
     }
   ],
-  "comments":[
-
+  "comments": [
+    {
+      "text": "ddd",
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "createdAt": "2021-12-23T10:17:46.456Z",
+      "createdAtMs": 1640254666456,
+      "id": 3
+    },
+    {
+      "text": "asd",
+      "productId": "4",
+      "createdAt": "2021-12-25T08:54:40.364Z",
+      "createdAtMs": 1640422480364,
+      "id": 12
+    },
+    {
+      "text": "asd",
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "createdAt": "2021-12-25T10:30:28.592Z",
+      "createdAtMs": 1640428228592,
+      "id": 13
+    },
+    {
+      "text": " Мощность автомобиля составляла 77 кВт (105 л.с. при 5700 об/мин и 142 Нм при 3200 об/мин)",
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "createdAt": "2021-12-25T10:36:06.709Z",
+      "createdAtMs": 1640428566709,
+      "id": 14
+    },
+    {
+      "text": "asd",
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "createdAt": "2021-12-25T10:42:19.701Z",
+      "createdAtMs": 1640428939701,
+      "id": 15
+    },
+    {
+      "text": "vvv",
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "createdAt": "2021-12-25T10:43:30.918Z",
+      "createdAtMs": 1640429010918,
+      "id": 16
+    },
+    {
+      "text": "asd",
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "createdAt": "2021-12-25T10:43:54.307Z",
+      "createdAtMs": 1640429034307,
+      "id": 17
+    },
+    {
+      "text": "asd",
+      "owner": "maira@gmail.com",
+      "productId": "1",
+      "createdAt": "2021-12-25T10:45:16.176Z",
+      "createdAtMs": 1640429116176,
+      "id": 18
+    }
+  ],
+  "likes": [
+    {
+      "productId": "3",
+      "rate": 1,
+      "id": 1
+    },
+    {
+      "owner": "maira@gmail.com",
+      "productId": "3",
+      "rate": 1,
+      "id": 2
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 3
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 4
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 5
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 6
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 7
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 8
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 9
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 10
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 11
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 12
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 13
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 14
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 15
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 16
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 17
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 18
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 19
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 20
+    },
+    {
+      "owner": "maira@gmail.com",
+      "productId": "1",
+      "rate": 1,
+      "id": 21
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 22
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 23
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 24
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 25
+    },
+    {
+      "owner": "maira@gmail.com",
+      "rate": 1,
+      "id": 26
+    },
+    {
+      "productId": "1",
+      "rate": 1,
+      "id": 27
+    }
   ]
 }

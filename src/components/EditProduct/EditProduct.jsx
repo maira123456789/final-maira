@@ -3,24 +3,24 @@ import { useNavigate, useParams } from "react-router";
 import { Button, Form, Input, Select, InputNumber } from "antd";
 import { productsContext } from "../../contexts/productsContext";
 import { brandsContext } from "../../contexts/brandsContext";
-import { useForm } from "antd/lib/form/Form";
 
 const EditProduct = () => {
-  const params = useParams();  //  params уже обьект и можно обращаться к его ключам
-  const navigate = useNavigate()
-  const { getOneProduct, oneProduct,updateProduct } = useContext(productsContext);
+  const params = useParams(); //  params уже обьект и можно обращаться к его ключам
+  const navigate = useNavigate();
+  const { getOneProduct, oneProduct, updateProduct } =
+    useContext(productsContext);
   const { getBrands, brands } = useContext(brandsContext);
   const [form] = Form.useForm();
   useEffect(() => {
-    getOneProduct(params.id)
+    getOneProduct(params.id);
     getBrands();
   }, []);
-  useEffect(()=>{
-      form.setFieldsValue(oneProduct)
-  },[oneProduct])
+  useEffect(() => {
+    form.setFieldsValue(oneProduct);
+  }, [oneProduct]);
   const onFinish = (values) => {
     console.log("Success:", values);
-    updateProduct(params.id, values).then(()=>navigate("/admin"))
+    updateProduct(params.id, values).then(() => navigate("/admin"));
   };
   return (
     <div className="container" style={{ marginTop: "15px" }}>
@@ -87,7 +87,7 @@ const EditProduct = () => {
             },
           ]}
         >
-          <InputNumber min={1} style={{width:"100%"}} />
+          <InputNumber min={1} style={{ width: "100%" }} />
         </Form.Item>
 
         <Form.Item

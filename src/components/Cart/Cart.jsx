@@ -8,7 +8,7 @@ const Cart = () => {
   useEffect(() => {
     getCart();
   }, []);
-//   console.log(cart);
+  //   console.log(cart);
   return (
     <div className="container">
       <List
@@ -16,7 +16,7 @@ const Cart = () => {
         size="large"
         dataSource={cart?.products}
         footer={<h2>Total: {cart?.totalPrice}$</h2>}
-        renderItem={(item) => <CartItem item={item}/>}
+        renderItem={(item) => <CartItem item={item} />}
       />
     </div>
   );

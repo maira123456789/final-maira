@@ -14,38 +14,31 @@ import Routing from "./Routing";
 import "antd/dist/antd.css";
 import "./App.css";
 import CartContextProvider from "./contexts/cartContext";
-// import CommentContextProvider from "./contexts/CommentContext";
+import CommentContextProvider from "./contexts/CommentContext";
+import LikesContextProvider from "./contexts/likesContext";
 
 const App = () => {
   return (
     <AuthContextProvider>
-      {/* <CommentContextProvider> */}
-      <FavoriteContextProvider>
-        <CartContextProvider>
-          <BrandsContextProvider>
-            <ProductsContextProvider>
-              <BrowserRouter>
-                <Header />
-                <Routing />
-                <Footer />
-              </BrowserRouter>
-            </ProductsContextProvider>
-          </BrandsContextProvider>
-        </CartContextProvider>
-      </FavoriteContextProvider>
-      {/* </CommentContextProvider> */}
+      <LikesContextProvider>
+        <CommentContextProvider>
+          <FavoriteContextProvider>
+            <CartContextProvider>
+              <BrandsContextProvider>
+                <ProductsContextProvider>
+                  <BrowserRouter>
+                    <Header />
+                    <Routing />
+                    <Footer />
+                  </BrowserRouter>
+                </ProductsContextProvider>
+              </BrandsContextProvider>
+            </CartContextProvider>
+          </FavoriteContextProvider>
+        </CommentContextProvider>
+      </LikesContextProvider>
     </AuthContextProvider>
   );
 };
 
 export default App;
-
-/*
-CRUD
-фильтрация
-пагинация
-поиск 
-корзина
-роутинг
-админка
-*/

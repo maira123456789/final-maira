@@ -8,7 +8,7 @@ const Error404 = () => {
       title="404"
       subTitle="Sorry, the page you visited does not exist."
       extra={
-        <Link style={{display:'flex',justifyContent:'center'}} to="/">
+        <Link style={{ display: "flex", justifyContent: "center" }} to="/">
           <Button type="primary">Home</Button>
         </Link>
       }

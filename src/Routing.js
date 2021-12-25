@@ -46,10 +46,10 @@ const Routing = () => {
       id: 6,
     },
     {
-      link:"/favorites",
-      element:<Favorites/>,
-      id:7
-    }
+      link: "/favorites",
+      element: <Favorites />,
+      id: 7,
+    },
   ];
   const ADMIN_ROUTES = [
     {

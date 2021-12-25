@@ -67,20 +67,20 @@ img {
   font-weight: bold;
 }
 
-@media all and (max-width:888px){
-  .footer{
+@media all and (max-width: 888px) {
+  .footer {
     margin: 10%;
   }
 }
 
-@media all and (max-width:888px){
-  .ins{
+@media all and (max-width: 888px) {
+  .ins {
     display: none;
   }
 }
 
-@media all and (max-width:400px){
-  .copyrights{
+@media all and (max-width: 400px) {
+  .copyrights {
     display: none;
   }
 }

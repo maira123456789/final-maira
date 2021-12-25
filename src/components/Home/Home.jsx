@@ -51,15 +51,15 @@ const Home = () => {
         />
       </div>
       <div className="link" style={{textDecoration:"none"}}>
-          <Link to="/favorites" style={{color:"black",display:"flex",justifyContent:"center"}}>THE BEST OF ALL THE TIME</Link>
+          <Link to="/favorites" style={{color:"#FFE4C4",display:"flex",justifyContent:"center"}}>THE BEST OF ALL THE TIME</Link>
       </div>
       <div className="cards">
         <Card
           hoverable
-          style={{ width: 320 }}
+          style={{ width: 320, backgroundColor:"#674ea7",border:"none" }}
           cover={
             <img
-            style={{width:"315px",height:"200px"}}
+            style={{width:"320px",height:"200px",margin:"-1% -0.5% 0 0" }}
               alt="example"
               src="https://avatars.mds.yandex.net/get-verba/787013/2a0000016090e9f4428d684fc4c2d293b92d/cattouch"
             />
@@ -69,10 +69,10 @@ const Home = () => {
         </Card>
         <Card
           hoverable
-          style={{ width: 320 }}
+          style={{ width: 320, backgroundColor:"#674ea7",border:"none" }}
           cover={
             <img
-            style={{width:"315px",height:"200px"}}
+            style={{width:"320px",height:"200px",margin:"-1% -0.5% 0 0" }}
               alt="example"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/64_Chevelle_Malibu_SS_Coupe.jpg/305px-64_Chevelle_Malibu_SS_Coupe.jpg"
             />
@@ -82,10 +82,10 @@ const Home = () => {
         </Card>
         <Card
           hoverable
-          style={{ width: 320 }}
+          style={{ width: 320, backgroundColor:"#674ea7",border:"none" }}
           cover={
             <img
-            style={{width:"315px",height:"200px"}}
+            style={{width:"320px",height:"200px",margin:"-1% -0.5% 0 0" }}
               alt="example"
               src="https://auto.ironhorse.ru/wp-content/uploads/2015/12/Mustang-1-Cabrio.jpg"
             />
@@ -95,10 +95,10 @@ const Home = () => {
         </Card>
         <Card
           hoverable
-          style={{ width: 320 }}
+          style={{ width: 320, backgroundColor:"#674ea7",border:"none"}}
           cover={
             <img
-            style={{width:"315px",height:"200px"}}
+            style={{width:"320px",height:"200px",margin:"-1% -0.5% 0 0" }}
               alt="example"
               src="https://www.hushhush.com/wp-content/uploads/2019/05/20161026-162204-luxify-2483-26878-600x400.jpg"
             />

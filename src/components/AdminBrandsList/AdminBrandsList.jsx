@@ -13,7 +13,13 @@ const AdminBrandsList = () => {
       itemLayout="horizontal"
       dataSource={brands}
       renderItem={(item) => (
-        <List.Item actions={[<a key="list-loadmore-edit" onClick={()=> deleteBrand(item.id)}>Delete</a>]}>
+        <List.Item
+          actions={[
+            <a key="list-loadmore-edit" onClick={() => deleteBrand(item.id)}>
+              Delete
+            </a>,
+          ]}
+        >
           <List.Item.Meta
             avatar={<Avatar src={item.logo} />}
             title={<a href="">{item.brand}</a>}

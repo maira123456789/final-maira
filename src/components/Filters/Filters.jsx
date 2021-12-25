@@ -15,7 +15,7 @@ const Filters = ({ brand, setBrand, price, setPrice }) => {
         value={brand}
         onChange={(e) => setBrand(e)}
         mode="multiple"
-        placeholder="Filter by brand"
+        placeholder="Filter by marque"
       >
         {brands.map((item) => (
           <Select.Option value={item.brand} key={item.id}>

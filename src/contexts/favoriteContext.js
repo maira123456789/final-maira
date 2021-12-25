@@ -4,7 +4,7 @@ import { CASE_GET_FAVORITE } from "../helpers/cases";
 export const favoriteContext = React.createContext();
 
 const INIT_STATE = {
-  favorite: {}
+  favorite: {},
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -24,32 +24,32 @@ const FavoriteContextProvider = ({ children }) => {
   function addProductToFavorite(product) {
     let favorite = JSON.parse(localStorage.getItem("favorite"));
     if (!favorite) {
-        favorite = {
-        products: []
+      favorite = {
+        products: [],
       };
     }
     let newProduct = {
       item: product,
-      count: 1
+      count: 1,
     };
     let filteredFavorite = favorite.products.filter(
       (item) => item.item.id === product.id
     );
     if (filteredFavorite.length > 0) {
-        favorite.products = favorite.products.filter(
+      favorite.products = favorite.products.filter(
         (item) => item.item.id !== product.id
       );
     } else {
-        favorite.products.push(newProduct);
+      favorite.products.push(newProduct);
     }
     localStorage.setItem("favorite", JSON.stringify(favorite));
-    getFavorite() //автоматически обновляет избранное
+    getFavorite(); //автоматически обновляет избранное
   }
   function getFavorite() {
     let favorite = JSON.parse(localStorage.getItem("favorite"));
     if (!favorite) {
-        favorite = {
-        products: []
+      favorite = {
+        products: [],
       };
     }
     dispatch({
@@ -60,8 +60,8 @@ const FavoriteContextProvider = ({ children }) => {
   function deleteFromFavorite(id) {
     let favorite = JSON.parse(localStorage.getItem("favorite"));
     if (!favorite) {
-        favorite = {
-        products: []
+      favorite = {
+        products: [],
       };
     }
     favorite.products = favorite.products.filter((item) => item.item.id !== id);
@@ -69,18 +69,22 @@ const FavoriteContextProvider = ({ children }) => {
     getFavorite();
   }
 
-  function checkItemInFavorite(id) { //проверка добавлен ли товар
+  function checkItemInFavorite(id) {
+    //проверка добавлен ли товар
     let favorite = JSON.parse(localStorage.getItem("favorite"));
     if (!favorite) {
-        favorite = {
-        products: []
+      favorite = {
+        products: [],
       };
     }
-    let filteredFavorite = favorite.products.filter((item) => item.item.id === id);
+    let filteredFavorite = favorite.products.filter(
+      (item) => item.item.id === id
+    );
     return filteredFavorite.length > 0 ? true : false; // проверка есть ли такой элем в избран
   }
 
-  function changeProductCount(count, id) { //количество элементов в избран
+  function changeProductCount(count, id) {
+    //количество элементов в избран
     if (count <= 0) {
       count = 1;
     }
