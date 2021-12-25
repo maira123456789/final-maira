@@ -8,6 +8,9 @@ import DetailsProduct from "./components/DetailsProduct/DetailsProduct";
 import EditProduct from "./components/EditProduct/EditProduct";
 import Favorites from "./components/Favorites/Favorites";
 import Home from "./components/Home/Home";
+import Invoice from "./components/Invoice/Invoice";
+import Pay from "./components/Pay/Pay";
+
 import ProductsList from "./components/ProductsList/ProductsList";
 import { useAuth } from "./contexts/authContext";
 import AdminPage from "./pages/AdminPage";
@@ -49,6 +52,16 @@ const Routing = () => {
       link: "/favorites",
       element: <Favorites />,
       id: 7,
+    },
+    {
+      link: "/pay",
+      element: <Pay />,
+      id: 8,
+    },
+    {
+      link: "/invoice",
+      element: <Invoice />,
+      id: 9,
     },
   ];
   const ADMIN_ROUTES = [

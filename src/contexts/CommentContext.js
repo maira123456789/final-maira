@@ -1,5 +1,5 @@
-import React, { useEffect, useReducer, useState } from "react";
-import { APIcomments } from "../helpers/consts";
+import React, { useReducer } from "react";
+import { COMMENTS_API } from "../helpers/consts";
 import axios from "axios";
 
 export const commentsContext = React.createContext();
@@ -36,7 +36,7 @@ const CommentContextProvider = (props) => {
         createdAt,
         createdAtMs,
       };
-      const response = await axios.post(APIcomments, comment);
+      const response = await axios.post(COMMENTS_API, comment);
       getCommentsForRoom(productId);
     } catch (e) {
       console.log(e);
@@ -45,7 +45,7 @@ const CommentContextProvider = (props) => {
 
   const getCommentsForRoom = async (productId) => {
     try {
-      const response = await axios(APIcomments + "?productId=" + productId);
+      const response = await axios(COMMENTS_API + "?productId=" + productId);
       let action = {
         type: "GET_COMMENTS_FOR_ROOM",
         payload: response.data,
@@ -59,7 +59,7 @@ const CommentContextProvider = (props) => {
   const getCommentToEdit = async (id) => {
     try {
       const response = await axios(` 
-                ${APIcomments}/${id}`);
+                ${COMMENTS_API}/${id}`);
       let action = {
         type: "GET_COMMENTS_TO_EDIT",
         payload: response.data,
@@ -72,7 +72,7 @@ const CommentContextProvider = (props) => {
 
   const saveEditedComment = async (editedComment, id) => {
     try {
-      const response = await axios.patch(`${APIcomments}/${id}`, editedComment);
+      const response = await axios.patch(`${COMMENTS_API}/${id}`, editedComment);
       getCommentsForRoom(editedComment.productId);
       // clearState()
     } catch (e) {
@@ -82,7 +82,7 @@ const CommentContextProvider = (props) => {
 
   const deleteComment = async (comment) => {
     try {
-      await axios.delete(`${APIcomments}/${comment.id}`);
+      await axios.delete(`${COMMENTS_API}/${comment.id}`);
       getCommentsForRoom(comment.productId);
     } catch (e) {
       console.log(e);

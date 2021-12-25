@@ -1,4 +1,10 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  useReducer,
+} from "react";
 import fire from "../fire";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { googleAcc } from "../fire";
@@ -22,6 +28,7 @@ const reducer = (state = INIT_STATE, action) => {
 };
 
 const AuthContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, INIT_STATE);
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -118,6 +125,7 @@ const AuthContextProvider = ({ children }) => {
     emailError,
     passwordError,
     authWithGoogle,
+    googleUser: state.googleUser,
   };
 
   return <authContext.Provider value={values}>{children}</authContext.Provider>;

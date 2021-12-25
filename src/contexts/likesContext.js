@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useReducer } from "react";
-import { APIlikes } from "../helpers/consts";
+import { LIKES_API } from "../helpers/consts";
 
 export const likesContext = React.createContext();
 
@@ -30,7 +30,7 @@ const LikesContextProvider = (props) => {
         productId,
         rate,
       };
-      const response = await axios.post(APIlikes, likes);
+      const response = await axios.post(LIKES_API, likes);
       getLikes(productId);
     } catch (e) {
       console.log(e);
@@ -39,7 +39,7 @@ const LikesContextProvider = (props) => {
 
   const getLikes = async (productId) => {
     try {
-      const response = await axios(APIlikes + "?productId=" + productId);
+      const response = await axios(LIKES_API + "?productId=" + productId);
       let action = {
         type: "GET_LIKES",
         payload: response.data,
@@ -52,7 +52,7 @@ const LikesContextProvider = (props) => {
 
   const getLikesToEdit = async (id) => {
     try {
-      const response = await axios(`${APIlikes}/${id}`);
+      const response = await axios(`${LIKES_API}/${id}`);
       let action = {
         type: "GET_LIKES_TO_EDIT",
         payload: response.data,
@@ -65,7 +65,7 @@ const LikesContextProvider = (props) => {
   const saveEditedLikes = async (editedLikes) => {
     try {
       const response = await axios.patch(
-        `${APIlikes}/${editedLikes.id}`,
+        `${LIKES_API}/${editedLikes.id}`,
         editedLikes
       );
       getLikes(editedLikes.productId);

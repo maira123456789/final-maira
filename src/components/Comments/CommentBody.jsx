@@ -48,7 +48,10 @@ const CommentBody = ({ item }) => {
   );
 
   return (
-    <Card className="mt-2" style={{ width: "100%", border: "2px solid grey" }}>
+    <Card
+      className="mt-2"
+      style={{ width: "100%", border: "2px solid purple", margin: "1%" }}
+    >
       <Card.Header style={{ margin: "1%" }}>
         <img
           style={{ width: "22px", height: "22px", margin: "1%" }}
