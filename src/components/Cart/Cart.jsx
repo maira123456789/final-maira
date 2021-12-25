@@ -70,7 +70,7 @@ const Cart = () => {
         renderItem={(item) => <CartItem item={item} />}
       />
 
-<>
+      <>
         <div
           style={{
             display: "flex",

@@ -1,34 +1,34 @@
-.home-main{
-    background: url("https://wallpaper.dog/large/17133733.jpg");
-    background-size: cover;
-    margin-top: -1.3%;
-    margin-bottom: -3%;
-    background-attachment: fixed;
+.home-main {
+  background: url("https://wallpaper.dog/large/17133733.jpg");
+  background-size: cover;
+  margin-top: -1.3%;
+  margin-bottom: -3%;
+  background-attachment: fixed;
 }
 .img {
-    display: flex;
-    margin: 20px 30px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 20px 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .link {
-    margin-top: 5%;
-    text-decoration: underline;
-    font-size: 20px;
+  margin-top: 5%;
+  text-decoration: underline;
+  font-size: 20px;
 }
 
 .cards {
-    margin: 3%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 3%;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 3%;
 }
 
-@media all and(max-widht:1024px){
-    .main-home-img{
-        height: auto;
-    }
+@media all and(max-widht:1024px) {
+  .main-home-img {
+    height: auto;
+  }
 }

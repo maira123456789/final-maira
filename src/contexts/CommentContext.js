@@ -72,7 +72,10 @@ const CommentContextProvider = (props) => {
 
   const saveEditedComment = async (editedComment, id) => {
     try {
-      const response = await axios.patch(`${COMMENTS_API}/${id}`, editedComment);
+      const response = await axios.patch(
+        `${COMMENTS_API}/${id}`,
+        editedComment
+      );
       getCommentsForRoom(editedComment.productId);
       // clearState()
     } catch (e) {
