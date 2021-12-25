@@ -56,20 +56,6 @@ const CommentContextProvider = (props) => {
     }
   };
 
-  const getCommentToEdit = async (id) => {
-    try {
-      const response = await axios(` 
-                ${COMMENTS_API}/${id}`);
-      let action = {
-        type: "GET_COMMENTS_TO_EDIT",
-        payload: response.data,
-      };
-      dispatch(action);
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
   const saveEditedComment = async (editedComment, id) => {
     try {
       const response = await axios.patch(
@@ -97,7 +83,6 @@ const CommentContextProvider = (props) => {
       value={{
         addComments,
         getCommentsForRoom,
-        getCommentToEdit,
         deleteComment,
         saveEditedComment,
         comments: state.comments,

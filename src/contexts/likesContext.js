@@ -50,18 +50,6 @@ const LikesContextProvider = (props) => {
     }
   };
 
-  const getLikesToEdit = async (id) => {
-    try {
-      const response = await axios(`${LIKES_API}/${id}`);
-      let action = {
-        type: "GET_LIKES_TO_EDIT",
-        payload: response.data,
-      };
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
   const saveEditedLikes = async (editedLikes) => {
     try {
       const response = await axios.patch(
@@ -79,7 +67,6 @@ const LikesContextProvider = (props) => {
       value={{
         addLike: addLike,
         getLikes: getLikes,
-        getLikesToEdit: getLikesToEdit,
         saveEditedLikes: saveEditedLikes,
         likes: state.likes,
         likesToEdit: state.likesToEdit,

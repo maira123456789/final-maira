@@ -155,6 +155,22 @@
       "createdAt": "2021-12-23T10:17:46.456Z",
       "createdAtMs": 1640254666456,
       "id": 3
+    },
+    {
+      "text": "asd",
+      "owner": "maira@gmail.com",
+      "productId": "1",
+      "createdAt": "2021-12-25T15:24:38.031Z",
+      "createdAtMs": 1640445878031,
+      "id": 4
+    },
+    {
+      "text": "asd",
+      "owner": "maira@gmail.com",
+      "productId": "1",
+      "createdAt": "2021-12-25T15:25:40.755Z",
+      "createdAtMs": 1640445940755,
+      "id": 5
     }
   ],
   "likes": [
